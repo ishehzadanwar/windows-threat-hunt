@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 250" width="1000" height="250" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="hbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c1712"/><stop offset="1" stop-color="#120d09"/>
+    </linearGradient>
+    <linearGradient id="hamber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2c46b"/><stop offset="1" stop-color="#d98f2b"/>
+    </linearGradient>
+    <marker id="ha" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#c9b79c"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="250" rx="16" fill="url(#hbg)"/>
+  <text x="40" y="48" fill="#f6efe1" font-size="23" font-weight="700">The hunt loop</text>
+  <rect x="42" y="62" width="66" height="4" rx="2" fill="url(#hamber)"/>
+
+  <g>
+    <g transform="translate(40,100)"><rect width="150" height="70" rx="10" fill="#241d16" stroke="#3a2f24"/><text x="75" y="32" fill="#f2c46b" font-size="13" font-weight="700" text-anchor="middle">1 · HYPOTHESIS</text><text x="75" y="52" fill="#a99a86" font-size="12" text-anchor="middle">what would evil look like?</text></g>
+    <path d="M190 135 L224 135" fill="none" stroke="#c9b79c" stroke-width="2" marker-end="url(#ha)"/>
+    <g transform="translate(228,100)"><rect width="150" height="70" rx="10" fill="#241d16" stroke="#3a2f24"/><text x="75" y="32" fill="#f2c46b" font-size="13" font-weight="700" text-anchor="middle">2 · SCOPE</text><text x="75" y="52" fill="#a99a86" font-size="12" text-anchor="middle">which event IDs?</text></g>
+    <path d="M378 135 L412 135" fill="none" stroke="#c9b79c" stroke-width="2" marker-end="url(#ha)"/>
+    <g transform="translate(416,100)"><rect width="150" height="70" rx="10" fill="url(#hamber)"/><text x="75" y="32" fill="#1a130b" font-size="13" font-weight="700" text-anchor="middle">3 · HUNT</text><text x="75" y="52" fill="#3a2a12" font-size="12" text-anchor="middle">query &amp; pivot in Wazuh</text></g>
+    <path d="M566 135 L600 135" fill="none" stroke="#c9b79c" stroke-width="2" marker-end="url(#ha)"/>
+    <g transform="translate(604,100)"><rect width="150" height="70" rx="10" fill="#241d16" stroke="#3a2f24"/><text x="75" y="32" fill="#f2c46b" font-size="13" font-weight="700" text-anchor="middle">4 · FINDINGS</text><text x="75" y="52" fill="#a99a86" font-size="12" text-anchor="middle">TP / benign / none</text></g>
+    <path d="M754 135 L788 135" fill="none" stroke="#c9b79c" stroke-width="2" marker-end="url(#ha)"/>
+    <g transform="translate(792,100)"><rect width="168" height="70" rx="10" fill="#241d16" stroke="#6cc08b" stroke-opacity="0.6"/><text x="84" y="32" fill="#8fd3ab" font-size="13" font-weight="700" text-anchor="middle">5 · FEEDBACK</text><text x="84" y="52" fill="#a99a86" font-size="12" text-anchor="middle">gap → new detection</text></g>
+  </g>
+  <path d="M876 170 L876 205 Q876 220 861 220 L120 220 Q105 220 105 205 L105 172" fill="none" stroke="#d98f2b" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ha)"/>
+  <text x="490" y="238" fill="#8f8171" font-size="12" text-anchor="middle">a hunt that finds nothing is still a valid result</text>
+</svg>
